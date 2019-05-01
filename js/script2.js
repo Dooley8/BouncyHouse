@@ -100,21 +100,21 @@ function getMousePosition(canvas, event) {
 }
 
 function doReset(){
-	alert("I'm going to do a reset");
+	//alert("I'm going to do a reset");
 	howManyMade = 0;
 
-		var xLocsLen = xLocs.length;
-		var yLocsLen = yLocs.length;
+		var xLocsLen = xlocs.length;
+		var yLocsLen = ylocs.length;
 		var dXSpeedLen = dXSpeed.lenght;
 		var dYSpeedLen = dYSpeed.lenght;
 		var dotColorLen = dotColor.lenght;
 
 		for(var i = 0; i < xLocsLen; i++){
-			xLocs.pop();
+			xlocs.pop();
 		}
 
 		for(var i = 0; i < yLocsLen; i++){
-			yLocs.pop();
+			ylocs.pop();
 		}
 
 		for(var i = 0; i < dXSpeedLen; i++){
@@ -126,10 +126,10 @@ function doReset(){
 		}
 
 		for(var i = 0; i < dotColorLen; i++){
-			dotColor.pop
+			dotColor.pop();
 		}
+		redrawScene
 
-		
 
 }
 
